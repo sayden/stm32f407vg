@@ -30,7 +30,10 @@ CFLAGS += -I$(STM_COMMON)/Libraries/STM32F4xx_StdPeriph_Driver/inc
 
 # add startup file to build
 SRCS += $(STM_COMMON)/Libraries/CMSIS/ST/STM32F4xx/Source/Templates/TrueSTUDIO/startup_stm32f4xx.s
-SRCS += stm32f4xx_conf.h stm32f4xx_rcc.c stm32f4xx_gpio.c
+SRCS += stm32f4xx_conf.h 
+SRCS += stm32f4xx_usart.h
+SRCS += stm32f4xx_rcc.c
+SRCS += stm32f4xx_gpio.c
 OBJS = $(SRCS:.c=.o)
 
 
